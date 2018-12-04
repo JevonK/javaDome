@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Dome</title>
 </head>
 <body>
-    <h1>Hello，World！</h1>
+<table class="table">
+    <tr>
+        <th style="width: 8%;">院校名称</th>
+        <th style="width: 8%;">院校所在地</th>
+        <th style="width: 8%;">院校隶属</th>
+        <th style="width: 8%;">院校类型</th>
+        <th style="width: 8%;">学历层次</th>
+        <th  style="width: 8%;">院校特性</th>
+        <th  style="width: 8%;">研究生院</th>
+        <th style="width: 8%;">满意度</th>
+        <th  >专业</th>
+    </tr>
+    <tr th:each="item:${list}">
+        <td th:text="${ item.yuan_xiao_ming_cheng }"></td>
+        <td th:text="${ item.yuan_xiao_suo_zai_di }"></td>
+        <td th:text="${ item.yuan_xiao_li_shu }"></td>
+        <td th:text="${ item.yuan_xiao_lei_xing }"></td>
+        <td th:text="${ item.xue_li_ceng_ci }"></td>
+        <td th:text="${ item.yuan_xiao_te_xing }"></td>
+        <td th:text="${ item.yan_jiu_sheng_yuan }"></td>
+        <td th:text="${ item.man_yi_du }"></td>
+        <!--<td>-->
+           <!--1-->
+        <!--</td>-->
+    </tr>
+</table>
 </body>
 </html>
