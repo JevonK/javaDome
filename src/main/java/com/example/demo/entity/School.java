@@ -3,7 +3,7 @@ package com.example.demo.entity;
 import java.io.Serializable;
 
 public class School implements Serializable {
-    private static final long serialVersionUID = -1369148652554782331L;
+//    private static final long serialVersionUID = -1369148652554782331L;
 
     private int id;
     private String yuan_xiao_ming_cheng;
